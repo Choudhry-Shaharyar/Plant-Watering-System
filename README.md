@@ -6,4 +6,10 @@ The GUI also displays a graph displaying data from the moisture sensor
 
   ## Image of GUI
   ![](Image-GUI.PNG)
+
+  ## Diagram
+  ![](digram.png)
   </div>
+
+  </div>
+  
