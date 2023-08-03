@@ -1,0 +1,33 @@
+---
+title: "Question 6"
+output: html_document
+---
+
+```{r}
+x <- c(1,2,3,4,5)
+px <- c(0.1,0.1,0.3,0.3,0.2)
+# Expected Value  of X
+EX <- sum(x*px);EX
+# Variance 
+EX1 <- sum(x*x*px)
+Var_x <- EX1 - (EX)^2;Var_x
+#Part 2
+n=100
+population <- 1:100
+samplex <- sample(population, n, replace = TRUE)
+sampley <- samplex + 9
+samplez <- -2*samplex
+samplew <- -2*samplex + 9
+meanx <- mean(samplex); meanx
+meany <- mean(sampley); meany
+meanz <- mean(samplez); meanz
+meanw <- mean(samplew); meanw
+varx <- var(samplex); varx
+vary <- var(sampley); vary
+varz <- var(samplez); varz
+varw <- var(samplew); varw
+```
+
+## R Markdown
+
+

@@ -1,0 +1,25 @@
+
+n=1000
+lambda=8
+X <- rpois(n,lambda)
+# Histogram
+hist(X,freq=FALSE, col="yellow")
+par(new=T)
+height=dpois(0:20,lambda)
+
+plot(height, type="h",xaxt="n", yaxt="n", xlab="", ylab="", col="red")
+
+legend("topleft","pmf",fill="red")
+
+#P(X=3)
+
+dpois(3,lambda)
+
+
+# P(X >= 4)
+
+sum(dpois(0:3,lambda))
+1-(sum(dpois(0:3,lambda)))
+
+# P(X<=5)
+sum(dpois(0:5,lambda))
